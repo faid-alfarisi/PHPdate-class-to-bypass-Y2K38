@@ -26,7 +26,7 @@ If you don't need today date, you can create a date from string then call `times
 	- Removed W (ISO-8601 week number of year) due to instability
 	- Fix incorrect day name
 	- Fix examples
-* **1.2 (21 Sep 2026):**
+* **1.3 (21 Sep 2026):**
 	- Fix some typos
 	
 ### Usage
