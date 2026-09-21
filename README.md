@@ -26,6 +26,8 @@ If you don't need today date, you can create a date from string then call `times
 	- Removed W (ISO-8601 week number of year) due to instability
 	- Fix incorrect day name
 	- Fix examples
+* **1.2 (21 Sep 2026):**
+	- Fix some typos
 	
 ### Usage
 ```php
@@ -87,4 +89,4 @@ $my_date = $date->format("Y-m-d H:i:s", $my_timestamp);		// Create date from tim
 |`A`   | Uppercase Ante meridiem and Post meridiem                                                  |
 |`a`   | Lowercase Ante meridiem and Post meridiem                                                  |
 
-> **Note:** to add/change the format ability go to `format()` function on line 246
+> **Note:** to add/change the format ability go to `format()` function on line 258

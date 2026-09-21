@@ -2,7 +2,7 @@
 /*
 	Author		: Muhammad Faid Alfarisi
 	
-	Version		: 1.1 (2016-12-18)
+	Version		: 1.3 (2026-09-21)
 	
 	Changelog	:
 		----------------
@@ -26,6 +26,10 @@
 			- Removed W (ISO-8601 week number of year) due to instability
 			- Fix incorrect day name
 			- Fix examples
+		----------------
+		1.3 [2026-09-21]
+		----------------
+			- Fix some typos
 	
 	Usage:
 	------
@@ -84,7 +88,7 @@
 		A => Uppercase Ante meridiem and Post meridiem
 		a => Lowercase Ante meridiem and Post meridiem
 		===============================================================================
-		Note: to add/change the format ability go to line format() function on line 246
+		Note: to add/change the format ability go to line format() function on line 258
 		===============================================================================
 */
 
@@ -286,7 +290,7 @@ class PHPdate {
 			$day_name++;
 			$day_name = $day_name > 6 ? 0 : $day_name;
 			$y++;
-			$timstamp = 0;
+			$timestamp = 0;
 			$minus = false;
 		}
 		
@@ -339,7 +343,7 @@ class PHPdate {
 			$m++;
 			$day_name++;
 			$day_name = $day_name > 6 ? 0 : $day_name;
-			$timstamp = 0;
+			$timestamp = 0;
 			$minus = false;
 		}
 		
@@ -378,7 +382,7 @@ class PHPdate {
 			$doy++;
 			$day_name++;
 			$day_name = $day_name > 6 ? 0 : $day_name;
-			$timstamp = 0;
+			$timestamp = 0;
 			$minus = false;
 		}
 		
@@ -399,7 +403,7 @@ class PHPdate {
 		$timestamp -= $tmp;
 		if($minus && $timestamp <= 0) {
 			$h++;
-			$timstamp = 0;
+			$timestamp = 0;
 			$minus = false;
 		}
 		
@@ -420,7 +424,7 @@ class PHPdate {
 		$timestamp -= $tmp;
 		if($minus && $timestamp <= 0) {
 			$i++;
-			$timstamp = 0;
+			$timestamp = 0;
 			$minus = false;
 		}
 		
